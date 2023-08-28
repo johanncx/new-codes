@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exemplo x e x.value</title>
+<script>
+function transformaEmMaiusculas() {
+    var campoTexto = document.getElementById("campoTexto"); // Obtém a referência ao campo de entrada
+    var texto = campoTexto.value; // Obtém o valor do campo de entrada
+    
+    var resultado = document.getElementById("resultado"); // Obtém a referência à div de resultado
+    resultado.innerHTML = "Texto em maiúsculas: " + texto.toUpperCase(); // Mostra o texto em maiúsculas na div
+}
+</script>
+</head>
+<body>
+    
+<input type="text" id="campoTexto" placeholder="Digite um texto"> <!-- Campo de entrada -->
+<button onclick="transformaEmMaiusculas()">Transformar em Maiúsculas</button> <!-- Botão para transformar -->
+
+<div id="resultado"></div> <!-- Div onde o resultado será exibido -->
+
+</body>
+</html>
